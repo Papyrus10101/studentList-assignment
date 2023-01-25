@@ -10,4 +10,47 @@ let student = [
 ];
 
 
+function studentWithHighestMarks(array) {
+    
+    let highestMark = 0;
+    let highestStudent = "";
 
+    array.forEach((student) => {
+        let mark = student.marks.reduce ((acc, val)=> acc + val , 0);
+        if  (mark > highestMark){
+            highestMark = mark
+            highestStudent = student.name
+        }
+
+    });
+
+        return;
+    // return student name
+    }
+    
+    studentWithHighestMarks(student)
+
+function minimumValue(array) {
+    let minimumValue = array.reduce(function(acc, cV) {
+    return acc < cV ? acc : cV;
+    }, Infinity);
+    
+    
+    return; 
+    // return a number
+    }
+ 
+minimumValue([20, -2, 4, -11, 0, 25])
+
+
+
+function lengthOfString(string) {
+        
+    let stringCount = string.length;
+    
+    return;
+    
+    // return a number
+}
+
+lengthOfString("helloworld")
